@@ -22,6 +22,7 @@ class Endereco {
        //var_dump("Destruir"); 
     }
 
+    // Organiza como vai ser mostrado na tela. 
     public function __toString()
     {
         return $this->logradoro.", " .$this->numero. ". " .$this->cidade;
