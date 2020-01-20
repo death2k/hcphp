@@ -64,6 +64,9 @@ spl_autoload_register(function($nameClass)){
 
 
 
+//------- Diretorio para novas classes //
+//organizar assunstos por pastas, agrupar classe em diretorios
+
 
 
 
