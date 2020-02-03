@@ -23,3 +23,14 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=biblioteca
+  phpmyadmin:
+    container_name: phpMyCURSOHCPHP
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysqldb
+    ports:
+      - 9191:80
+    environment:
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: root
+      PMA_HOST: mysql
